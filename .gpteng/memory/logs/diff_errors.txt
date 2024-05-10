@@ -1,3 +1,69 @@
 
 2024-05-09T22:54:00.995181
 
+
+2024-05-09T22:58:23.450819
+In Hunk:@@ -29,7 +31,7 @@
+       id: profile.getId(),
+       name: profile.getName(),
+       imageUrl: profile.getImageUrl(),
+-      email: profile.getEmail()
++      email: profile.getEmail()
+       id: "1029384756",
+       name: "John Doe",
+       imageUrl: 'https://images.unsplash.com/photo-1713238392341-92fb2cdc12de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMG9mJTIwYSUyMG1hbnxlbnwwfHx8fDE3MTUzMDUwMzN8MA&ixlib=rb-4.0.3&q=80&w=1080',
+       email: "john.doe@example.com",
+     };
+     setUser(mockUser);
+   };
+ 
+   return (
+     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+       <VStack spacing={4}>
+         {!user ? (
+           <div className="g-signin2" data-onsuccess="onSignIn"></div>
+           {/* <Button leftIcon={<FaGoogle />} colorScheme="red" onClick={handleSignIn}>
+             Sign in with Google
+           </Button> */}
+         ) : (
+           <Box textAlign="center">
+             <Image borderRadius="full" boxSize="100px" src={user.imageUrl} alt="Profile image" />
+             <Text fontSize="xl" fontWeight="bold">
+               {user.name}
+             </Text>
+             <Text fontSize="md">{user.email}</Text>
+           </Box>
+         )}
+       </VStack>
+     </Container>
+   );
+ };
+ 
+ export default Index;
+         ) : (
+           <Box textAlign="center">
+             <Image borderRadius="full" boxSize="100px" src={user.imageUrl} alt="Profile image" />
+             <Text fontSize="xl" fontWeight="bold">
+               {user.name}
+             </Text>
+             <Text fontSize="md">{user.email}</Text>
+           </Box>
+         )}
+       </VStack>
+     </Container>
+   );
+     });
+   };
+ 
+, there was at least one mismatch.
+
+2024-05-09T23:00:17.266376
+In @@ -7,3 +7,3 @@
+-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
++    <meta name="google-signin-client_id" content="800765811446-v21c0j29t4sr8mai5a9ib4rnte91fpo0.apps.googleusercontent.com">
+ 
+:The starting line of the diff @@ -7,3 +7,3 @@
+-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
++    <meta name="google-signin-client_id" content="800765811446-v21c0j29t4sr8mai5a9ib4rnte91fpo0.apps.googleusercontent.com">
+ 
+ does not exist in the code
