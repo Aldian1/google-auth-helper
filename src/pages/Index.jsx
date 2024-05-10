@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Button, VStack, Text, Image, Box } from "@chakra-ui/react";
 import { FaGoogle } from "react-icons/fa";
 import { GoogleLogin } from 'react-google-login';
-import { FaGoogle } from "react-icons/fa";
 
 const Index = () => {
   const [user, setUser] = useState(null);
@@ -48,19 +47,16 @@ const Index = () => {
             onFailure={onSignIn}
             cookiePolicy={'single_host_origin'}
           />
-        {!user ? (
-          <div className="g-signin2" data-onsuccess="onSignIn"></div>
-          {/* <Button leftIcon={<FaGoogle />} colorScheme="red" onClick={handleSignIn}>
+          <Button leftIcon={<FaGoogle />} colorScheme="red" onClick={handleSignIn}>
             Sign in with Google
-          </Button> */}
+          </Button>
         ) : (
           <Box textAlign="center">
             <Image borderRadius="full" boxSize="100px" src={user.imageUrl} alt="Profile image" />
-            <Text fontSize="xl" fontWeight="bold">
-              {user.name}
-            </Text>
+            <Text fontSize="xl" fontWeight="bold">{user.name}</Text>
             <Text fontSize="md">{user.email}</Text>
           </Box>
+        )}
         )}
       </VStack>
     </Container>
