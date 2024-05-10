@@ -1,0 +1,18 @@
+# Remove '#' to select a file.
+
+# gpt-engineer can only read selected files. Including irrelevant files will degrade performance, cost additional tokens and potentially overflow token limit.
+
+[files]
+"index.html" = "selected"
+"gpt-engineer.toml" = "selected"
+"vite.config.js" = "selected"
+"run.sh" = "selected"
+"README.md" = "selected"
+"package-lock.json" = "selected"
+"package.json" = "selected"
+"docker-compose.yml" = "selected"
+"public/favicon.ico" = "selected"
+"src/main.jsx" = "selected"
+"src/App.jsx" = "selected"
+"src/pages/Index.jsx" = "selected"
+# 
